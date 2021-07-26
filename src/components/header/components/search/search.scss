@@ -1,0 +1,23 @@
+.search {
+  padding: 1px 2px 1px 30px;
+  height: 22px;
+  width: 100%;
+
+  background-image: url("/assets/images/search.svg");
+  background-repeat: no-repeat;
+  background-size: 9%;
+  background-position: 5px;
+  background-color: white;
+
+  border: none;
+  border-radius: 15px;
+  outline: none;
+
+  @media screen and (max-width: 650px) {
+    background-size: 6%;
+  }
+
+  @media screen and (max-width: 450px) {
+    background-size: 9%;
+  }
+}

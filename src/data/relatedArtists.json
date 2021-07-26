@@ -1,0 +1,37 @@
+[
+  {
+    "artist": "Hoodie Allen",
+    "imgUrl": "./images/hoodie.jpg",
+    "id": 1
+  },
+  {
+    "artist": "Mike Stud",
+    "imgUrl": "./images/mikestud.jpg",
+    "id": 2
+  },
+  {
+    "artist": "Drake",
+    "imgUrl": "./images/drake.jpg",
+    "id": 3
+  },
+  {
+    "artist": "J. Cole",
+    "imgUrl": "./images/jcole.jpg",
+    "id": 4
+  },
+  {
+    "artist": "Big Sean",
+    "imgUrl": "./images/bigSean.jpg",
+    "id": 5
+  },
+  {
+    "artist": "Wiz Khalifa",
+    "imgUrl": "./images/wiz.jpeg",
+    "id": 6
+  },
+  {
+    "artist": "Yonas",
+    "imgUrl": "./images/yonas.jpg",
+    "id": 7
+  }
+]

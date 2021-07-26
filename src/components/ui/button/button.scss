@@ -1,0 +1,47 @@
+@import '../../../../helpers/variables';
+
+.button {
+  padding: 0 15px;
+  height: 27px;
+
+  color: $grey;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+
+  border: 1px solid $grey;
+  border-radius: 20px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  transition: color 300ms, border-color 300ms, background-color 300ms;
+
+  &:hover {
+    border-color: $white;
+    color: $white;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+  }
+
+  &--primary {
+    color: $white;
+    border-color: $green;
+    background-color: $green;
+
+    &:hover {
+      border-color: $light-green;
+      background-color: $light-green;
+    }
+  }
+
+  &--circle {
+    width: 27px;
+    height: 27px;
+    padding: 0;
+    border-radius: 50%;
+  }
+}

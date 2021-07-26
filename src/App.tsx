@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
 import './app.scss';
+import { Header } from './components/header/header';
 
 function App() {
   return (
     <div className="app">
+      <Header />
     </div>
   );
 }

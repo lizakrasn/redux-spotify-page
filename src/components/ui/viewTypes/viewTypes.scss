@@ -1,0 +1,24 @@
+@import '../../../../helpers/variables';
+
+.view-types {
+  padding-bottom: 10px;
+
+  &__icon {
+    width: 30px;
+    height: 30px;
+    padding: 8px 8px 4px;
+    margin: 2px;
+    border-radius: 50%;
+    transition: color 300ms, background-color 300ms;
+    cursor: pointer;
+
+    &:hover {
+      color: $white;
+      background-color: $light-black;
+    }
+
+    &--active {
+      background-color: $light-black;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.track-progress-bar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 15px;
+
+  &__track-container {
+    display: flex;
+    width: 100%;
+  }
+
+  &__track {
+    height: 4px;
+    width: 100%;
+    align-self: center;
+
+    &:hover {
+      .track-progress-bar__thumb {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__thumb {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: rgb(170, 170, 170);
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    transition: opacity 300ms;
+    opacity: 0;
+  }
+}
