@@ -1,0 +1,17 @@
+@import '../../../../../../../../../helpers/variables';
+
+.tracks {
+  width: 100%;
+
+  &__track {
+    border-top: 1px solid $light-black;
+  }
+
+  &__track:last-child {
+    border-bottom: 1px solid $light-black;
+  }
+
+  &__button {
+    margin-top: 15px;
+  }
+}

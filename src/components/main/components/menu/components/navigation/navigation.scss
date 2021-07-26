@@ -1,0 +1,75 @@
+@import "../../../../../../helpers/index.scss";
+
+.navigation {
+  font-size: 14px;
+
+  &__list-items {
+    display: flex;
+    flex-direction: column;
+    color: $grey;
+  }
+
+  &__button {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    color: $grey;
+    background-color: inherit;
+    cursor: pointer;
+  }
+
+  &__name {
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  &__item {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+
+    color: $grey;
+    list-style-type: none;
+    text-decoration: none;
+    transition: 300ms;
+
+    &:hover {
+      color: $white;
+      border-right: 3px solid #1ed760;
+    }
+
+    &:focus {
+      color: $dark-blue;
+      text-decoration: underline;
+    }
+  }
+
+  &__item-text {
+    margin-left: 15px;
+  }
+
+  @media screen and (max-width: 768px) {
+    &__button {
+      margin: 0 auto 5px;
+    }
+
+    &__list-items {
+      width: fit-content;
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and(max-width: 450px){
+    &__icon {
+      display: none;
+    }
+
+    &__item-text {
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+}

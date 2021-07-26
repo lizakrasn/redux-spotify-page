@@ -1,0 +1,76 @@
+@import '../../../../../../../../../../../helpers/variables';
+
+.song {
+  padding: 10px 0;
+  display: grid;
+  grid-template-columns: auto auto 1fr 1fr auto auto;
+  align-items: center;
+  font-size: 14px;
+  transition: background-color 300ms;
+
+  &:hover {
+    background-color: #282828;
+  }
+
+  &__number {
+    margin-left: 10px;
+    width: 20px;
+  }
+
+  &__added {
+    margin: 0 30px 0 20px;
+    color: $grey;
+    border: none;
+    outline: none;
+
+    background-color: inherit;
+  }
+
+  &__name {
+    color: $white;
+  }
+
+  &__coartists {
+    color: $grey;
+  }
+
+  &__explicit {
+    padding: 2px 5px;
+    width: fit-content;
+    justify-self: end;
+    text-align: end;
+
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    color: $light-grey;
+    border: 1px solid $light-grey;
+  }
+
+  &__duration {
+    margin-left: 65px;
+  }
+
+  &__popularity {
+    margin-left: 40px;
+    padding-right: 10px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: auto auto 1fr auto;
+
+    &__explicit {
+      display: none;
+    }
+
+    &__duration {
+      margin-left: 10px;
+    }
+
+    &__popularity {
+      display: none;
+    }
+  }
+}

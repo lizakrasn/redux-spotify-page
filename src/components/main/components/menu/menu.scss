@@ -1,0 +1,54 @@
+@import "../../../../helpers/index.scss";
+
+.menu {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+
+  &__navigation-block {
+    overflow-y: scroll;
+      
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      background: #373737;
+    }
+  }
+  
+  &__navigation {
+    padding: 15px 15px 0;
+  }
+
+  &__navigation:last-child {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-rows: auto auto;
+
+    &__playlist {
+      display: none;
+    }
+
+    &__navigation-block {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__navigation {
+      flex-basis: 33%;
+      padding: 15px 0;
+    }
+
+    &__navigation:last-child {
+      margin-bottom: 0;
+    }
+
+    &__playing {
+      border-top: 1px solid black;
+    }
+  }
+}

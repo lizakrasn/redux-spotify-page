@@ -1,0 +1,25 @@
+@import "../../../../../../helpers/index.scss";
+
+.add-playlist {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+
+  line-height: 34px;
+  border-top: 1px solid $black;
+  border-bottom: 1px solid $black;
+
+  color: $grey;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 300ms;
+
+  &:hover {
+    color: $white;
+    background-color: $hover-grey;
+  }
+
+  &__text {
+    margin-left: 12px;
+  }
+}

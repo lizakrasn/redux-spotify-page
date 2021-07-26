@@ -1,0 +1,52 @@
+@import '../../../../../../../../../helpers/variables';
+
+.related-artist {
+  padding: 5px;
+  width: 310px;
+  display: flex;
+  align-items: center;
+  background-color: $light-black;
+  border-bottom: 2px solid black;
+
+  cursor: pointer;
+  transition: background-color 300ms;
+
+  &:hover {
+    background-color: $hover-grey;
+  }
+
+  &__image {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__name {
+    margin-left: 15px;
+    color: $white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin: 10px;
+    width: calc(100% / 3 - 20px);
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 5px;
+    width: calc(100% / 2 - 10px);
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 20%;
+    margin: 5px;
+    background-color: $background-color-second;
+    border: none;
+
+    &__name {
+      display: none;
+    }
+  }
+}

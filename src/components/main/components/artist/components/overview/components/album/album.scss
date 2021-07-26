@@ -1,0 +1,80 @@
+@import '../../../../../../../../../helpers/variables';
+
+.album {
+  &__info {
+    display: flex;
+  }
+
+  &__details {
+    margin-left: 15px;
+  }
+
+  &__image {
+    width: 135px;
+    height: 135px;
+    object-fit: cover;
+  }
+
+  &__year {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  &__name {
+    font-size: 30px;
+    font-weight: 100;
+    color: white;
+  }
+
+  &__actions {
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__button {
+    padding: 0 30px;
+    margin-right: 10px;
+    transition: border-color 300ms, color 300ms;
+    
+    &:hover {
+      border-color: $green;
+    }
+  }
+
+  &__song-heading {
+    padding: 20px 0 10px;
+    display: grid;
+    grid-template-columns: auto auto 1fr auto;
+    justify-items: end;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  &__heading-title {
+    margin-left: 70px;
+  }
+
+  &__heading-popularity {
+    margin-left: 50px;
+    padding-right: 10px;
+  }
+
+  &__song {
+    border-top: 1px solid $light-black;
+  }
+
+  &__song:last-child {
+    border-bottom: 1px solid $light-black;
+  }
+
+  @media screen and (max-width: 1200px) {
+    &__song-heading {
+      grid-template-columns: auto auto 1fr;
+    }
+
+    &__heading-popularity {
+      display: none;
+    }
+  }
+}

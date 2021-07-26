@@ -1,0 +1,74 @@
+@import '../../../../../../../helpers/variables';
+
+.overview {
+  padding: 15px;
+
+  &__info {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  &__artist {
+    width: 70%;
+    padding-right: 15px;
+  }
+
+  &__latest-release {
+    margin-bottom: 30px;
+  }
+
+  &__related {
+    width: 30%;
+  }
+
+  &__albums {
+    margin-bottom: 15px;
+  }
+
+  &__album-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    border-bottom: 1px solid $light-black;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    color: $grey;
+    letter-spacing: 1.25px;
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  @media screen and(max-width: 1024px) {
+    &__info {
+      flex-direction: column;
+    }
+
+    &__artist {
+      width: 100%;
+    }
+
+    &__related {
+      width: 100%;
+    }
+
+    &__popular {
+      margin-bottom: 15px;
+    }
+
+    &__related-artists {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+
+  @media screen and (max-width: 768px) {
+    &__artist {
+      padding: 0;
+    }
+  }
+}

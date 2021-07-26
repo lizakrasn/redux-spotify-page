@@ -1,0 +1,22 @@
+@import "../../../../../../../../../helpers/variables";
+
+.latest-release {
+  display: flex;
+  width: 100%;
+  background-color: $light-black;
+  font-size: 14px;
+  color: $grey;
+
+  &__image {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 15px;
+  }
+}

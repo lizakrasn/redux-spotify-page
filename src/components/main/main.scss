@@ -1,0 +1,36 @@
+@import "../../helpers/variables";
+
+.content {
+  width: 100%;
+  display: flex;
+
+  background-color: #181818;
+
+  &__menu {
+    flex-basis: 20%;
+    background-color: $light-black;
+  }
+
+  &__artist {
+    flex-basis: 80%;
+    height: 100%;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      background: #373737;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+
+    &__menu {
+      width: 100%;
+    }
+  }
+}

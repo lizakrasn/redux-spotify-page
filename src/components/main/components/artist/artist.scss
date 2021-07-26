@@ -1,0 +1,12 @@
+.artist {
+  &__related-artists {
+    padding: 15px;
+  }
+
+  &__tabs {
+    height: 60px;
+    width: 100%;
+    margin-top: 15px;
+    background: rgba(24, 24, 24, 0.6);
+  }
+}
